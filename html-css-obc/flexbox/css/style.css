@@ -1,0 +1,67 @@
+/*
+display: flex;
+
+* gap
+column-gap: 20px; espaçamento entre as boxes em coluna
+row-gap: 20px; espaça entre boxes in row
+gap: 0 20px; column and row
+
+* flex-direction
+flex-direction: row(padrão);
+flex-direction: column; - coluna
+flex-direction: row-reverse - inverção de ordem
+flex-direction: column-reverse
+
+* justify-content
+justify-content: center; centralizar boxes ao meio
+justify-content: flex-end; final da página
+justify-content: flex-start; início da página(padrão)
+justify-content: space-around; tenho o mesmo espaçamento no left e right
+justify-content: space-between; separar itens o máximo possível
+justify-content: space-evenly; espaçamento igual entre itens
+
+* align-itens:
+center;
+end;
+start;b- Padrão
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: calc(100vh - 20px);
+    display: flex;
+    gap: 20px 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(20, 20, 148);
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    width: 250px;
+    height: 200px;
+    /*margin: 10px;*/
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.66);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+.box-1 {
+    background-color: royalblue;
+}
+
+.box-2 {
+    background-color: crimson;
+}
